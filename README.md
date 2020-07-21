@@ -5,7 +5,7 @@ This design has been develop in flutter
 ## Introduction 
 
 
-> I came across this interesting UI for "Travello - Explore and travel more!!" by [Khushboo Chandnanin](https://www.uplabs.com/khushboochandnani). This is an implementation for the concept in Flutter for Android and iOS, I have developed this application just to show how flexible and responsive flutter is.
+> I came across this interesting UI for "Travello APP - Explore and travel more!!" by [Khushboo Chandnanin](https://www.uplabs.com/khushboochandnani). And this is the implementation for this Travello concept in Flutter for Android and iOS. I have developed this application just to show how flexible and responsive flutter is.
 
 
 ## SCREENSHOTS
@@ -32,8 +32,8 @@ This design has been develop in flutter
 
 ### Install and get Started
 
-> flutter packages get
-> flutter run --release
+> - flutter packages get
+> - flutter run --release
 
 ### Author
 
