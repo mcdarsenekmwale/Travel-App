@@ -3,7 +3,7 @@
 This design has been develop in flutter
 
 ## Introduction 
-<hr>
+
 
 > I came across this interesting UI for "Travello - Explore and travel more!!" by [Khushboo Chandnanin](https://www.uplabs.com/khushboochandnani). This is an implementation for the concept in Flutter for Android and iOS, I have developed this application just to show how flexible and responsive flutter is.
 
@@ -31,12 +31,12 @@ This design has been develop in flutter
 
 
 ### Install and get Started
-<hr>
+
 > flutter packages get
 > flutter run --release
 
-###Author
-<hr>
+### Author
+
 - **Name** : McDarsene MK Mwale 
 - **Website** : [mcdarsene.com ](https://mcdarsene.com)
 
