@@ -17,46 +17,41 @@ class _ProfilePAgeState extends State<ProfilePAge> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.grey.shade200,
       body: Container(
         height: AppConstants.appHeight,
         width: AppConstants.appWidth,
-        child: Stack(
-          children: <Widget>[
-            PageHeader(
-              image: "assets/images/image2.jpg",
-            ),
-            Align(
-              alignment: Alignment.topCenter,
-              child: Container(
-                height: MediaQuery.of(context).size.height * 0.9,
-                width: AppConstants.appWidth,
-                margin: EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 0.125,
-                ),
-                decoration: BoxDecoration(
-                  borderRadius: AppConstants.topBodyRadius,
-                ),
-                child: Column(
-                  children: <Widget>[
-                    SizedBox(height: MediaQuery.of(context).size.width * 0.08,),
-                    ProfileHeader(),
-                    Expanded(
-                      child: ListView(
-                        shrinkWrap: true,
-                        physics: AlwaysScrollableScrollPhysics(),
-                        children: <Widget>[
-                          PlacesVisited(),
-                          PlacesLiked(),
-                          SizedBox(height: MediaQuery.of(context).size.width * 0.08,),
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+        child: SingleChildScrollView(
+          physics:AlwaysScrollableScrollPhysics() ,
+          child: Stack(
+            children: <Widget>[
+              PageHeader(
+                image: "assets/images/image2.jpg",
               ),
-            )
-          ],
+              Align(
+                alignment: Alignment.topCenter,
+                child: Container(
+                  width: AppConstants.appWidth,
+                  margin: EdgeInsets.only(
+                    top: MediaQuery.of(context).size.height * 0.125,
+                  ),
+                  decoration: BoxDecoration(
+                    borderRadius: AppConstants.topBodyRadius,
+                  ),
+                  child: Column(
+                    children: <Widget>[
+                      SizedBox(height: MediaQuery.of(context).size.width * 0.08,),
+                      ProfileHeader(),
+                      PlacesVisited(),
+                      PlacesLiked(),
+                      SizedBox(height: MediaQuery.of(context).size.width * 0.08,),
+                    ],
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );
